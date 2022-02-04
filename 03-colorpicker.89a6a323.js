@@ -13,4 +13,4 @@ module.exports=[{hex:"#f44336",rgb:"244,67,54"},{hex:"#e91e63",rgb:"233,30,99"},
 },{}],"jP9q":[function(require,module,exports) {
 "use strict";var e=c(require("../templates/color-cards.hbs")),t=c(require("./colors.json"));function c(e){return e&&e.__esModule?e:{default:e}}require("../css/common.css"),require("../css/colorpicker.css");var r=document.querySelector(".js-palette"),s=o(t.default);function o(t){return(0,e.default)(t)}function a(e){if(e.target.classList.contains("color-swatch")){var t=e.target,c=t.closest(".color-card");i(),u(c),n(t.dataset.hex)}}function n(e){document.body.style.backgroundColor=e}function i(){var e=document.querySelector(".color-card.is-active");e&&e.classList.remove("is-active")}function u(e){e.classList.add("is-active")}r.insertAdjacentHTML("beforeend",s),r.addEventListener("click",a);
 },{"../templates/color-cards.hbs":"HOS1","./colors.json":"JPEQ","../css/common.css":"h9NW","../css/colorpicker.css":"h9NW"}]},{},["jP9q"], null)
-//# sourceMappingURL=/goit-js-hw-777/03-colorpicker.89a6a323.js.map
+//# sourceMappingURL=/03-colorpicker.89a6a323.js.map

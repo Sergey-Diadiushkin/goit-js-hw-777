@@ -8,4 +8,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"Wtje":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}require("../css/common.css"),require("../css/feedback-form.css");var r="my-msg",a={},o=document.querySelector("textarea"),n=document.querySelector(".js-feedback-form");function u(e){var t=e.target.value;localStorage.setItem(r,t)}function c(e){e.preventDefault(),console.log("отправляем форму"),e.currentTarget.reset(),localStorage.removeItem(r)}function s(){var e=localStorage.getItem(r);e&&(o.value=e)}n.addEventListener("submit",c),o.addEventListener("input",(0,e.default)(u,500)),n.addEventListener("input",function(e){console.log(a),a[e.target.name]=e.target.value,localStorage.setItem("formData",JSON.stringify(a))}),s();
 },{"lodash.throttle":"FNyO","../css/common.css":"VgMz","../css/feedback-form.css":"VgMz"}]},{},["Wtje"], null)
-//# sourceMappingURL=/goit-js-hw-777/02-feedback.9633578f.js.map
+//# sourceMappingURL=/02-feedback.9633578f.js.map
